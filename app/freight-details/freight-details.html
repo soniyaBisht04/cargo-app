@@ -1,0 +1,52 @@
+<div class="route-details-container">
+    <h3>Freight-details</h3>
+    <form class="form-horizontal" role="form">
+        <div class="row padding-left">
+            <label class="control-label">Type of goods</label>
+        </div>
+        <div class="row">
+            <div class="btn-group col-sm-10">
+                <button type="button" class="btn" ng-class="{ 'btn-primary': $ctrl.typeOfGood == 'paper' }"
+                        ng-click="$ctrl.typeOfGood = 'paper'">Paper</button>
+                <button type="button" class="btn" ng-class="{ 'btn-primary': $ctrl.typeOfGood == 'plastic' }"
+                        ng-click="$ctrl.typeOfGood = 'plastic'">Plastic</button>
+                <button type="button" class="btn" ng-class="{ 'btn-primary': $ctrl.typeOfGood == 'textile' }"
+                        ng-click="$ctrl.typeOfGood = 'textile'">Textile</button>
+                <button type="button" class="btn" ng-class="{ 'btn-primary': $ctrl.typeOfGood == 'other' }"
+                        ng-click="$ctrl.typeOfGood = 'other'">Other</button>
+            </div>
+        </div>
+        <div class=row">
+            <label class="control-label">Volumn</label>
+        </div>
+        <div class=row">
+            <div class="form-group row padding-left">
+
+                    <select class="form-control col-sm-3 freight-inputs" data-ng-options="x for x in $ctrl.options" data-ng-model="$ctrl.selectedOption"></select>
+                    <select class="form-control col-sm-2 freight-inputs" data-ng-options="x for x in $ctrl.quantityOptions" data-ng-model="$ctrl.selectedQuantity"></select>
+                <div class="col-sm-2 freight-inputs">
+                    <input type="number" id="length" class="form-control  freight-inputs" />
+                    <label class="control-label" for="length">Length(cm)</label>
+                </div>
+                <div class="col-sm-2 freight-inputs">
+                    <input type="number" id="width" class="form-control " />
+                    <label class="control-label" for="width">Width(cm)</label>
+                </div>
+                <div class="col-sm-2">
+                    <input type="number" id="height" class="form-control" />
+                    <label class="control-label" for="height">Height(cm)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="weight" class="col-sm-3 control-label">Weight</label>
+            <div class="input-group col-sm-4">
+                <input type="number" id="weight" class="form-control" aria-label="Weight (to the nearest)">
+                <div class="input-group-append">
+                    <span class="input-group-text">Kg</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

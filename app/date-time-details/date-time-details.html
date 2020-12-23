@@ -1,0 +1,25 @@
+<div class="date-time-details-container">
+    <h3>Date & Time</h3>
+    <form class="form-horizontal" role="form">
+        <div class="form-group row">
+            <label for="pickUpDate" class="col-sm-3 control-label">Pickup Date</label>
+            <div class="col-sm-4">
+                <input type="date" id="pickUpDate" class="form-control" />
+            </div>
+            <div class="col-sm-5">
+                <rzslider rz-slider-model="$ctrl.sliderPickup.minValue" rz-slider-high="$ctrl.sliderPickup.maxValue"
+                          rz-slider-options="$ctrl.sliderPickup.options"></rzslider>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="deliveryDate" class="col-sm-3 control-label">Pickup Date</label>
+            <div class="col-sm-4">
+                <input type="date" id="deliveryDate" class="form-control" />
+            </div>
+            <div class="col-sm-5">
+                <rzslider rz-slider-model="$ctrl.sliderDelivery.minValue" rz-slider-high="$ctrl.sliderDelivery.maxValue"
+                          rz-slider-options="$ctrl.sliderDelivery.options"></rzslider>
+            </div>
+        </div>
+    </form>
+</div>

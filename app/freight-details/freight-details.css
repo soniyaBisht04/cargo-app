@@ -1,0 +1,6 @@
+.route-details-container .freight-inputs {
+    margin-right: 5px;
+}
+.route-details-container .btn-group .btn {
+    flex-grow: 1;
+}
